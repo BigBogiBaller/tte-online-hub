@@ -137,23 +137,16 @@ function Index() {
             </Link>
           </div>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
-            {[
-              { img: kaese, section: 0, index: 0 },
-              { img: krautsuppe, section: 1, index: 0 },
-              { img: mehlspeisen, section: 2, index: 0 },
-            ].map(({ img, section, index }) => {
-              const item = menu[section].items[index];
-              return (
-                <article key={item.name} className="overflow-hidden rounded-lg bg-white/10">
-                  <img src={img} alt={item.name} className="h-52 w-full object-cover" loading="lazy" />
-                  <div className="p-5">
-                    <h3 className="font-display text-lg font-bold">{item.name}</h3>
-                    <p className="mt-2 text-sm opacity-85">{item.description}</p>
-                    <p className="mt-4 font-display font-bold">€ {item.price}</p>
-                  </div>
-                </article>
-              );
-            })}
+            {favourites.map((item) => (
+              <article key={item.name} className="overflow-hidden rounded-lg bg-white/10">
+                <img src={item.img} alt={item.name} className="h-52 w-full object-cover" loading="lazy" />
+                <div className="p-5">
+                  <h3 className="font-display text-lg font-bold">{item.name}</h3>
+                  <p className="mt-2 text-sm opacity-85">{item.description}</p>
+                  <p className="mt-4 font-display font-bold">€ {item.price}</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
