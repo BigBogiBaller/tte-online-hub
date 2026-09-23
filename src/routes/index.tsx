@@ -34,6 +34,27 @@ export const Route = createFileRoute("/")({
   }),
 });
 
+const favourites = [
+  {
+    name: "Bockhütten-Brettljause",
+    description: "Hausspeck, Hauswurst, Bergkäse, Verhackert, Kren und Bauernbrot",
+    price: "16,50",
+    img: kaese,
+  },
+  {
+    name: "Krautsuppe mit Löwenzahnblüte",
+    description: "Cremige Krautsuppe mit Kräutern aus der Almwiese",
+    price: "6,90",
+    img: krautsuppe,
+  },
+  {
+    name: "Bauernkrapfen mit Marmelade",
+    description: "Frisch gebacken – solange der Vorrat reicht",
+    price: "5,50",
+    img: mehlspeisen,
+  },
+];
+
 function Index() {
   const { add, setOpen } = useCart();
   const highlights = products.slice(0, 3);
