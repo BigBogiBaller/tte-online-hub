@@ -3,7 +3,7 @@ import { Clock, Dog, Leaf, MapPin, Mountain, Star, Utensils } from "lucide-react
 import Layout from "@/components/Layout";
 import { reviews, site } from "@/lib/site";
 import { formatPrice, products } from "@/lib/shop-data";
-import { menu } from "@/lib/menu-data";
+import { useCart } from "@/lib/cart";
 import { useCart } from "@/lib/cart";
 import heroImg from "@/assets/bock/huette-eingang.jpg";
 import landschaft from "@/assets/bock/landschaft-1.jpg";
