@@ -4,7 +4,6 @@ import Layout from "@/components/Layout";
 import { reviews, site } from "@/lib/site";
 import { formatPrice, products } from "@/lib/shop-data";
 import { useCart } from "@/lib/cart";
-import { useCart } from "@/lib/cart";
 import heroImg from "@/assets/bock/huette-eingang.jpg";
 import landschaft from "@/assets/bock/landschaft-1.jpg";
 import kaese from "@/assets/bock/kaeseplatte.jpg";
